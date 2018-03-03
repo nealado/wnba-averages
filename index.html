@@ -1,0 +1,183 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>WNBA in Averages</title>
+  <meta name="WNBA in Averages" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/nv.d3.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+  <main>
+    <div class="container container__intro">
+      <div class="empty"></div>
+      <img class="image__player" src="img/player.svg" alt="">
+
+      <div class="container__intro--text">
+        <h1 class="intro__h1">Who is the Average WNBA Player?</h1>
+        <p class="intro__text">
+          Her name is
+          <span class="dynamic">
+            <a href="#chart__title--first-names">
+              <span class="first-name">???</span>
+            </a>
+            <a href="#chart__title--last-names">
+              <span class="last-name">???</span>
+            </a>
+          </span>*. She's played in the league for
+          <span class="dynamic">
+            <a href="#chart__title--experience">
+              <span class="experience">???</span> years</span>
+          </a>. Went to
+          <a href="#chart__title--university">
+            <span class="dynamic college">???</span>
+          </a>. She is
+          <a href="#chart__title--birth-month">
+            <span class="dynamic age">???</span>
+          </a> years old. She is
+          <span class="dynamic height">???</span> tall.
+        </p>
+      </div>
+    </div>
+    <p class="text_down-arrow">↓</p>
+    <div class="container chart">
+      <h3 id="chart__title--first-names" class="chart__title"> Most Common First Names</h3>
+
+      <div class="grid chart__firstnames">
+        <div class="names chart__firstnames">
+          <h4>who are they?</h4>
+          <h6>click for their stats pages</h6>
+        </div>
+        <div class="chart chart__firstnames">
+          <svg width="960" height="500"></svg>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container chart">
+      <h3 id="chart__title--last-names" class="chart__title">Most Common Last Names</h3>
+      <div class="chart__lastnames grid">
+        <div class="chart__lastnames names">
+          <h4>who are they?</h4>
+          <h6>click for their stats pages</h6>
+        </div>
+        <div class="chart__lastnames">
+          <svg width="960" height="500"></svg>
+        </div>
+      </div>
+    </div>
+
+    <p class="container paragraph paragraph__stats">
+      She shoots
+      <span class="ppg">7.36</span> ppg and plays for
+      <span class="min">19</span> minutes a game. Averages
+      <span class="reb">3.2</span> rebounds,
+      <span class="ast">1.7</span> assists,
+      <span class="stl">0.67</span> steals,
+      <span class="blk">0.67</span> blocks. From the charity stripe she hits
+      <span class="ftp">75</span>% of the time. Her field goal percentage is
+      <span class="fgp">43</span>% and she protects the ball well averaging 1.2 turnovers.
+    </p>
+
+    <div class="container grid">
+      <div class="chart grid__item">
+        <h3 id="chart__title--university" class="chart__title">Players by University</h3>
+        <div class="chart__universities grid">
+          <div class="chart__universities names">
+            <h4>who are they?</h4>
+            <h6>click for their stats pages</h6>
+          </div>
+          <div class="chart__universities">
+            <svg width="700" height="700"></svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="container chart grid__item">
+        <h3 id="chart__title--experience" class="chart__title"># of Players by Years in League</h3>
+
+        <div class="chart__experience grid">
+          <div class="chart__experience names">
+            <h4>who are they?</h4>
+            <h6>click for their stats pages</h6>
+          </div>
+          <div class="chart__experience">
+            <svg width="960" height="500"></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <p class="container paragraph paragraph__universities">
+      UConn is well represented in the WNBA, but Duke and Maryland are very well represented as well. That said, there's a 1 in
+      10 chance, if she plays in the WNBA, she probably went to UConn.
+    </p>
+
+    <p class="container paragraph paragraph__experience">
+      The bulk (80%) of players in the WNBA are in the rookie and journeyman category of 2-5 years. There are 5 current players
+      that have been in the league for more than 12 years.
+    </p>
+
+    <div class="container chart">
+      <h3 id="chart__title--birth-month" class="chart__title"> Players by Birth Month</h3>
+
+      <div class="grid chart__birthmonth">
+        <div class="names chart__birthmonth">
+          <h4>who are they?</h4>
+          <h6>click for their stats pages</h6>
+        </div>
+        <div class="chart chart__birthmonth">
+          <svg width="960" height="500"></svg>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="container paragraph paragraph__zodiac">
+      Fun fact, there are a ton of Gemini in the WNBA -- more players had birthdays in June than any other month.
+    </p>
+
+    <p>Bonus: check out what the data on this page looks like if you
+      <span class="bold">filter by number of years in the WNBA.</span>
+    </p>
+
+    <div class="container container__buttons">
+    </div>
+
+    <footer class="footer">
+      <p class="footer_text">
+        thanks for scrolling, have a good day!
+      </p>
+      <p class="footer_text">
+        ❤
+      </p>
+      <p class="footer_text">
+        *To be clear, not a real person, it's the mode of all the first and last names. Additionally, please read post here for methodology.
+        Built this to learn a few things, could have easily missed a few players, so, disclaimers everywhere.
+      </p>
+    </footer>
+
+  </main>
+  <!-- <script src="js/vendor/modernizr-3.5.0.min.js"></script> -->
+  <!-- <script src="js/plugins.js"></script> -->
+  <script src="js/vendor/d3.min.js"></script>
+  <script src="js/vendor/nv.d3.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
