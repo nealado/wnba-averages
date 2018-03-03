@@ -205,6 +205,10 @@ h3 {
   color: var(--accent-font-color-light);
 }
 
+a {
+  color: var(--accent-font-color-light);
+}
+
 .footer_text {
   font-size: 0.5em;
 }
