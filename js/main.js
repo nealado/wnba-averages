@@ -4361,6 +4361,10 @@ var formatter = new Intl.DateTimeFormat("en", {
   month: "long"
 });
 
+data.forEach(function (item) {
+  item.birthMonth = formatter.format(parser.parse(item.dob))
+  item.dob = parser.parse(item.dob);
+})
 
 //ENDS HELPERS
 
@@ -4392,7 +4396,8 @@ function appendButtons() {
     buttonContainer.appendChild(button);
 
     button.addEventListener("click", function (e) {
-      userInput = (e.originalTarget.dataset.value).split(",");
+      console.log(e.target.dataset.value);
+      userInput = (e.target.dataset.value).split(",");
       updateData()
     });
   }
@@ -4429,14 +4434,10 @@ function updateData() {
     }
 
     function getAvgAge() {
-      var playerBirthdays = makeArray('dob').map(function (dob) {
-        return parser.parse(dob)
-      })
+      var playerBirthdays = makeArray('dob');
 
-      var playerAges = playerBirthdays.map(function (dob) {
-        if (dob) {
-          return calculateAge(dob)
-        }
+      var playerAges = playerBirthdays.map(function (player) {
+          return calculateAge(player)
       })
 
       return playerAges
@@ -4444,11 +4445,6 @@ function updateData() {
 
     function getBirthdayData() {
       var arr = getPlayersArr();
-
-      arr.forEach(function (item) {
-        item.birthMonth = formatter.format(parser.parse(item.dob))
-        item.dob = parser.parse(item.dob);
-      })
 
       arr.sort(sortByDateAscending);
 
