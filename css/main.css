@@ -101,7 +101,7 @@ textarea {
 
 :root {
   --accent-font-color-dark: #204057;
-  --accent-font-color-light: #D03843;
+  --accent-font-color-light: #d03843;
   --accent-font-color-white: #fff;
 }
 
@@ -114,7 +114,7 @@ body {
   align-content: center;
   justify-content: center;
   width: 100vw;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 30px;
   font-weight: 300;
   margin: 0 auto;
@@ -146,7 +146,7 @@ nav div {
 }
 
 nav h1 {
-  font-family: 'Oxygen', sans-serif;
+  font-family: "Oxygen", sans-serif;
   font-weight: 300;
   font-size: 48px;
 }
@@ -167,7 +167,7 @@ footer {
 }
 
 .chart div {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   /* text-align: right; */
   /* padding: 3px;
     margin: 1px; */
@@ -176,7 +176,7 @@ footer {
 
 .nvd3 text {
   font-size: 15px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .bar {
@@ -299,7 +299,7 @@ a {
 .names {
   display: none;
   visibility: hidden;
-  background-color: rgba(216, 216, 216, 0.20);
+  background-color: rgba(216, 216, 216, 0.2);
   margin: 1em auto;
 }
 
@@ -334,8 +334,8 @@ a {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-  border: 3px solid var( --accent-font-color-light);
-  color: var( --accent-font-color-light);
+  border: 3px solid var(--accent-font-color-light);
+  color: var(--accent-font-color-light);
 }
 
 .btn:hover,
@@ -365,7 +365,6 @@ a {
     display: flex;
     flex-flow: column;
     text-align: center;
-    height: auto;
   }
   .intro__h1 {
     line-height: 1em;
@@ -373,13 +372,13 @@ a {
     margin: 0.67em 0;
   }
   .intro__h1::after {
-    content: '\A ↓';
+    content: "\A ↓";
     font-weight: lighter;
     font-size: 40px;
-    white-space: pre;
+    display: block;
   }
   .empty {
-    height: 16vh;
+    height: 10vh;
   }
   .image__player {
     height: 45vh;
@@ -530,9 +529,9 @@ a {
 }
 
 @media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
